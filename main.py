@@ -1,15 +1,19 @@
 import numpy as np
 import matplotlib as mp
 import sklearn as sk
+from sklearn.cluster import KMeans
 import cv2
 import glob
 from PIL import Image
+from sklearn import preprocessing
+
 
 k = 8
 n = 4
 number_of_clusters = 8
-image_patches = []
-vector_of_image = []
+
+x_linear_regression = []
+y_linear_regression = []
 # the big big loop
 #for filename in glob.glob('testing/*.jpg'):
 #    img1 = cv2.imread(filename, 0)
@@ -17,26 +21,34 @@ vector_of_image = []
 img1 = cv2.imread('training/bedroom/0.jpg', 0).astype(float)
 height, width = img1.shape
 y = 0
-while (y + n<=height):
+while (y + k<=height):
+    image_patches = np.array([])
     x = 0
     while (x + k<=width):
         patch = img1[y:y+k, x:x+k]
-        image_patches.append(patch)
+        array_for_patch = np.array([])
+        for i in range(k):
+            for j in range(k):
+                array_for_patch = np.append(array_for_patch, patch[i][j])
+        image_patches = np.append(image_patches, array_for_patch)
         x += n
-    y += 4
-vector_of_image.append(image_patches)
+    y += n
+    y_linear_regression.append(1)
+    x_linear_regression.append(image_patches)
+
 
 #
 # K-Mean classifier!
 #
 
-# Define criteria = ( type, max_iter = 10 , epsilon = 1.0 )
-criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 10, 1.0)
+# all the features in [0,1]
+normalized_x = preprocessing.normalize(x_linear_regression)
+# all features is mean 0 and deviation is 1
+standardized_x = preprocessing.scale(x_linear_regression)
 
-# Set flags (Just to avoid line break in the code)
-flags = cv2.KMEANS_RANDOM_CENTERS
+kmeans = KMeans(number_of_clusters)
+kmeans = kmeans.fit(standardized_x)
+labels = kmeans.predict(standardized_x)
+centroids =kmeans.cluster_centers_
 
-# Apply KMeans
-compactness,labels,centers = cv2.kmeans(vector_of_image,number_of_clusters,None,criteria,10,flags)
-
-print (centers)
+print(centroids)
