@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec 13 18:50:14 2017
+
+@author: Dave
+"""
+
+import cv2
+import numpy as np
+import glob
+from sklearn.model_selection import train_test_split
+from CV3_1_functions import *
+#import os
+# debug: imageviewer from previous work 
+#from CV1_convolution import show_image
+from sklearn.feature_extraction.image import extract_patches_2d
+
+# given labels for our images
+names = ['bedroom', 'Coast', 'Forest', 'Highway', 'industrial', 'insidecity', 
+         'kitchen', 'livingroom', 'Mountain', 'Office', 'OpenCountry', 'store',
+         'Street', 'Suburb', 'TallBuilding']
+
+names_chunk_1 = ['bedroom', 'Coast', 'Forest']
+names_chunk_2 = ['Highway', 'industrial', 'insidecity']
+names_chunk_3 = ['kitchen', 'livingroom', 'Mountain']
+names_chunk_4 = ['Office', 'OpenCountry', 'store']
+names_chunk_5 = ['Street', 'Suburb', 'TallBuilding']
+
+
+# dictionaries mapping names to labels and vice versa - used so we can 
+# consistently use ndarrays, while preserving the ability to output text labels
+names_dict = {0:'bedroom', 1:'Coast', 2:'Forest', 3:'Highway', 4:'industrial', 
+              5:'insidecity', 6:'kitchen', 7:'livingroom', 8:'Mountain', 
+              9:'Office', 10:'OpenCountry', 11:'store', 12:'Street', 
+              13:'Suburb', 14:'TallBuilding'}
+
+labels_dict = {'bedroom':0, 'Coast':1, 'Forest':2, 'Highway':3, 'industrial':4, 
+              'insidecity':5, 'kitchen':6, 'livingroom':7, 'Mountain':8, 
+              'Office':9, 'OpenCountry':10, 'store':11, 'Street':12, 
+              'Suburb':13, 'TallBuilding':14}
+        
+img_dict = dict()
+tiny_img_dict = dict()
+
+# The below code creates our initial image dictionary
+patch_array_chunk_1 = np.zeros((10000000,65), dtype=float)
+row_no = 0
+num_imported = 0
+
+# This code will import the image, extract the patches, flatten them and save
+# into an array, along with a label indicating the image type it is applied to.
+# This array needs to be huge - there are 6.5m patches PER CLASS!!!
+for s in names_chunk_1:
+    for filename in glob.glob('training/'+s+'/*.jpg'):
+        img = np.array(cv2.imread(filename, 0).astype(float),dtype=np.float)
+        patch_list = extract_patches_2d(img, (8,8))
+        for patch in patch_list:
+            patch_array_chunk_1[row_no, 0:64] = np.reshape(patch, (1,64))
+            patch_array_chunk_1[row_no, 64] = labels_dict[s]
+            row_no += 1
+        num_imported += 1
