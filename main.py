@@ -9,6 +9,7 @@ from sklearn import preprocessing
 import collections
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
+from scipy import spatial
 
 size_patch = 100
 
@@ -113,9 +114,10 @@ output.close()
 '''
 input = open('data/histogram.data', 'r')
 histograms = pickle.load(input)
+input.close()
 # so no we put image here and classify if it is from 1st of 15th class
 # the distance is calculated by cosine transform
-filename = 'testing/0.jpg'
+filename = 'testing/33.jpg'
 img = preprocessing.normalize(cv2.imread(filename, 0).astype(float))
 img = preprocessing.scale(img)
 
@@ -138,9 +140,20 @@ while (y + size_patch <= height):
     y += n
 
 # compare out_instagram with instagram from other clusters
-max = 1
-for i in range(number_of_clusters):
-
+max = 2
+cluster_output = 0
+for i in range(number_of_classes):
+    t1 = histogram_for_input;
+    t2 = histograms[i];
+    result = 1 - spatial.distance.cosine(t1, t2)
+    if max ==2:
+        #max = cosine_similarity(t1,t2)
+        max = result
+        cluster_output = i
+    elif (max<result):
+        max = result
+        cluster_output = i
+print ('class number ', cluster_output, ' name ', names[cluster_output])
 print ('done')
 
 
