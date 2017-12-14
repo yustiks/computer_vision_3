@@ -100,12 +100,12 @@ class KmeanClass:
 
     def create_histograms(self):
         for s in self.names1:
-            for filename in glob.glob('/home/smart/PycharmProjects/comp_vision_3/training2/' + s + '/*.jpg'):
+            for filename in glob.glob('/home/smart/PycharmProjects/comp_vision_3/training/' + s + '/*.jpg'):
                 img = np.array(cv2.imread(filename, 0).astype(float), dtype=np.float)
                 img = preprocessing.normalize(img)
                 img = preprocessing.scale(img)
                 self.all_images.append(img)
-                # print('class ', filename, 'image ', s)
+                print('class ', filename, 'image ', s)
                 patch_for_image = extract_patches_2d(img, (self.SIZE_OF_PATCH, self.SIZE_OF_PATCH),
                                                      max_patches=self.NUMBER_OF_PATCHES, random_state=37)
                 sh = patch_for_image.shape
@@ -118,9 +118,15 @@ class KmeanClass:
                 for each_patch in patch_for_image:
                     labels.append(kmean_object.kmeans.predict([each_patch]))
                 histogram = np.histogram(labels, range(self.NUMBER_OF_CLUSTERS))
-                print (s, 'class ' )
                 self.x_histograms.append(histogram[0])
                 self.y_histograms.append(self.labels_dict[s])
+
+        output_file = open('/home/smart/PycharmProjects/comp_vision_3/data/x_histograms.pkl', 'wb')
+        pickle.dump(self.x_histograms, output_file, -1)
+        output_file.close()
+        output_file = open('/home/smart/PycharmProjects/comp_vision_3/data/y_histograms.pkl', 'wb')
+        pickle.dump(self.y_histograms, output_file, -1)
+        output_file.close()
 
     def linear_classifier(self):
         print ('linear')
@@ -137,18 +143,30 @@ class KmeanClass:
         self.linear_model = LinearSVC()
         self.linear_model.fit(trainData, trainLabels)
 
+        output_file = open('/home/smart/PycharmProjects/comp_vision_3/data/linear_model.pkl', 'wb')
+        pickle.dump(self.linear_model, output_file, -1)
+        output_file.close()
+
         # evaluate the classifier
-#        print("[INFO] evaluating classifier...")
-#        predictions = self.linear_model.predict(testData)
-#        print(classification_report(testLabels, predictions))
+        print("[INFO] evaluating classifier...")
+        predictions = self.linear_model.predict(testData)
+        print(classification_report(testLabels, predictions))
 
     def prediction(self):
-        filename = '/home/smart/PycharmProjects/comp_vision_3/testing/1.jpg'
-        img = np.array(cv2.imread(filename, 0).astype(float), dtype=np.float)
-        img = preprocessing.normalize(img)
-        img = preprocessing.scale(img)
-        histogram = self.histogram_plot(img)
-        print (kmean_object.linear_model.predict([histogram[0]]))
+        s = ''
+        num_img = 0
+        for filename in glob.glob('/home/smart/PycharmProjects/comp_vision_3/testing/*.jpg'):
+            img = np.array(cv2.imread(filename, 0).astype(float), dtype=np.float)
+            img = preprocessing.normalize(img)
+            img = preprocessing.scale(img)
+            histogram = self.histogram_plot(img)
+            t = int(kmean_object.linear_model.predict([histogram[0]])[0])
+            s += self.names_dict[t] + '\n'
+            print (filename, ' num_img = ', str(num_img))
+            num_img += 1
+        output_file = open('/home/smart/PycharmProjects/comp_vision_3/data/test.txt', 'w')
+        output_file.write(s)
+        output_file.close()
 
     def histogram_plot(self, img):
         patch_for_image = extract_patches_2d(img, (self.SIZE_OF_PATCH, self.SIZE_OF_PATCH),
@@ -160,6 +178,19 @@ class KmeanClass:
             labels.append(kmean_object.kmeans.predict([each_patch]))
         histogram = np.histogram(labels, range(self.NUMBER_OF_CLUSTERS))
         return (histogram)
+
+    def load_histograms(self):
+        input_file = open('/home/smart/PycharmProjects/comp_vision_3/data/x_histograms.pkl', 'rb')
+        self.x_histograms = pickle.load(input_file)
+        input_file.close()
+        input_file = open('/home/smart/PycharmProjects/comp_vision_3/data/y_histograms.pkl', 'rb')
+        self.y_histograms = pickle.load(input_file)
+        input_file.close()
+
+    def load_linear_classifier(self):
+        input_file = open('/home/smart/PycharmProjects/comp_vision_3/data/linear_model.pkl', 'rb')
+        self.linear_model = pickle.load(input_file)
+        input_file.close()
 
 kmean_object = KmeanClass()
 
@@ -178,13 +209,21 @@ print ('load k-mean data')
 kmean_object.load_data()
 print ('load complete')
 
-print('create histograms for images')
-kmean_object.create_histograms()
-print ('histograms are created')
+#print('create histograms for images')
+#kmean_object.create_histograms()
+#print ('histograms are created')
+
+print('load histograms')
+kmean_object.load_histograms()
+print ('finish loading histograms')
 
 print('linear classifier')
 kmean_object.linear_classifier()
 print ('linear classifier created')
+
+print('linear classifier load')
+kmean_object.load_linear_classifier()
+print ('linear classifier loaded')
 
 print ('prediction ')
 kmean_object.prediction()

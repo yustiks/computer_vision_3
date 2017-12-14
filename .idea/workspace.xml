@@ -2,44 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aae0c29-2fcf-4aa5-8be4-42e7ad0ec15c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Coast/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/Forest/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/0.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training2/bedroom/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/kmean.pkl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/kmean_big.pkl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main1.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/temp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main1.py" afterPath="$PROJECT_DIR$/main1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,11 +16,21 @@
       <file leaf-file-name="main1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="154" column="1" lean-forward="true" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+            <state relative-caret-position="-1320">
+              <caret line="121" column="56" lean-forward="true" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4518">
+              <caret line="251" column="5" lean-forward="false" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,6 +60,10 @@
       <find>k</find>
       <find>input</find>
       <find>output</find>
+      <find>training2</find>
+      <find>linear_classifier</find>
+      <find>load_histograms</find>
+      <find>y_hist</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -104,6 +81,7 @@
         <option value="$PROJECT_DIR$/training1/main1.py" />
         <option value="$PROJECT_DIR$/temp.py" />
         <option value="$PROJECT_DIR$/main1.py" />
+        <option value="$PROJECT_DIR$/data/test.txt" />
       </list>
     </option>
   </component>
@@ -156,6 +134,11 @@
             <path>
               <item name="comp_vision_3" type="b2602c69:ProjectViewProjectNode" />
               <item name="comp_vision_3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="comp_vision_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comp_vision_3" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -332,7 +315,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26876876" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2912913" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -363,16 +346,6 @@
           <line>110</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main1.py</url>
-          <line>135</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main1.py</url>
-          <line>149</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -381,28 +354,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="107" />
+      <option name="time" value="109" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/knn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="20" selection-end-line="59" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/knn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -726,6 +682,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testing/0.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9490">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
@@ -734,15 +703,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testing/0.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/data/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4518">
+          <caret line="251" column="5" lean-forward="false" selection-start-line="251" selection-start-column="4" selection-end-line="251" selection-end-column="5" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="154" column="1" lean-forward="true" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+        <state relative-caret-position="-1320">
+          <caret line="121" column="56" lean-forward="true" selection-start-line="121" selection-start-column="56" selection-end-line="121" selection-end-column="56" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
