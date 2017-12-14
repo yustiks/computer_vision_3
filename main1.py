@@ -6,6 +6,8 @@ from sklearn.cluster import KMeans, MiniBatchKMeans
 from sklearn import metrics
 import pickle
 import os
+import matplotlib.pyplot as plt
+import matplotlib.mlab as mlab
 
 
 from sklearn.metrics import classification_report
@@ -36,8 +38,8 @@ class KmeanClass:
                    'Office': 9, 'OpenCountry': 10, 'store': 11, 'Street': 12,
                    'Suburb': 13, 'TallBuilding': 14}
 
-    NUMBER_OF_CLUSTERS = 100
-    NUMBER_OF_PATCHES = 50
+    NUMBER_OF_CLUSTERS = 500
+    NUMBER_OF_PATCHES = 20
     NUMBER_OF_PATCHES_BIG = 3100
     SIZE_OF_PATCH = 8
     MOVE_SIZE = 4
@@ -70,7 +72,7 @@ class KmeanClass:
             for filename in glob.glob(self.FILE_DIRECTORY+'training/' + s + '/*.jpg'):
                 img = np.array(cv2.imread(filename, 0).astype(float), dtype=np.float)
 #                img = preprocessing.normalize(img)
-                img = preprocessing.scale(img)
+                #img = preprocessing.scale(img)
                 self.all_images.append(img)
                 #print('class ', filename, 'image ', s)
                 patch_for_image = extract_patches_2d(img, (self.SIZE_OF_PATCH, self.SIZE_OF_PATCH),
@@ -78,6 +80,7 @@ class KmeanClass:
                 sh = patch_for_image.shape
                 patch_for_image = np.reshape(patch_for_image, (sh[0], sh[1]*sh[2]))
                 patch_for_image = preprocessing.normalize(patch_for_image)
+                patch_for_image = preprocessing.scale(patch_for_image)
                 if len(self.patches)>0:
                     self.patches = np.concatenate((self.patches, patch_for_image), axis=0)
                 else:
@@ -86,15 +89,15 @@ class KmeanClass:
                 #print('patches number ', str(self.patches_number))
 
     def kmean_clustering(self):
-        output_file = open(self.FILE_DIRECTORY+'data/kmean_big.pkl', 'wb+')
-        #self.kmeans = KMeans(self.NUMBER_OF_CLUSTERS, max_iter = 100)
+#        output_file = open(self.FILE_DIRECTORY+'data/kmean_big.pkl', 'wb+')
+        self.kmeans = KMeans(self.NUMBER_OF_CLUSTERS, max_iter = 100)
         # miniBatch - when there are millions of pictures
-        self.kmeans = MiniBatchKMeans(init='k-means++', n_clusters=self.NUMBER_OF_CLUSTERS,
-                                      batch_size=self.BATCH_SIZE, n_init=10, max_no_improvement=10,
-                                      verbose=0)
+        #self.kmeans = MiniBatchKMeans(init='k-means++', n_clusters=self.NUMBER_OF_CLUSTERS,
+        #                              batch_size=self.BATCH_SIZE, n_init=10, max_no_improvement=10,
+        #                              verbose=0)
         self.kmeans = self.kmeans.fit(self.patches)
-        pickle.dump(self.kmeans, output_file, -1)
-        output_file.close()
+ #       pickle.dump(self.kmeans, output_file, -1)
+ #       output_file.close()
 
     def load_data(self):
         input_file = open(self.FILE_DIRECTORY+'data/kmean_big.pkl', 'rb+')
@@ -106,14 +109,15 @@ class KmeanClass:
             for filename in glob.glob(self.FILE_DIRECTORY+'training/' + s + '/*.jpg'):
                 img = np.array(cv2.imread(filename, 0).astype(float), dtype=np.float)
 #                img = preprocessing.normalize(img)
-                img = preprocessing.scale(img)
+                #img = preprocessing.scale(img)
                 self.all_images.append(img)
-                print('class ', filename, 'image ', s)
+#                print('class ', filename, 'image ', s)
                 patch_for_image = extract_patches_2d(img, (self.SIZE_OF_PATCH, self.SIZE_OF_PATCH),
                                                      max_patches=self.NUMBER_OF_PATCHES_BIG, random_state=37)
                 sh = patch_for_image.shape
                 patch_for_image = np.reshape(patch_for_image, (sh[0], sh[1] * sh[2]))
                 patch_for_image = preprocessing.normalize(patch_for_image)
+                patch_for_image = preprocessing.scale(patch_for_image)
                 if len(self.patches) > 0:
                     self.patches = np.concatenate((self.patches, patch_for_image), axis=0)
                 else:
@@ -122,15 +126,16 @@ class KmeanClass:
                 for each_patch in patch_for_image:
                     labels.append(kmean_object.kmeans.predict([each_patch]))
                 histogram = np.histogram(labels, range(self.NUMBER_OF_CLUSTERS))
+
                 self.x_histograms.append(histogram[0])
                 self.y_histograms.append(self.labels_dict[s])
 
-        output_file = open(self.FILE_DIRECTORY+'data/x_histograms.pkl', 'wb+')
-        pickle.dump(self.x_histograms, output_file, -1)
-        output_file.close()
-        output_file = open(self.FILE_DIRECTORY+'data/y_histograms.pkl', 'wb+')
-        pickle.dump(self.y_histograms, output_file, -1)
-        output_file.close()
+#        output_file = open(self.FILE_DIRECTORY+'data/x_histograms.pkl', 'wb+')
+#        pickle.dump(self.x_histograms, output_file, -1)
+#        output_file.close()
+#        output_file = open(self.FILE_DIRECTORY+'data/y_histograms.pkl', 'wb+')
+#        pickle.dump(self.y_histograms, output_file, -1)
+#        output_file.close()
 
     def linear_classifier(self):
         # partition the data into training and testing splits, using 75%
@@ -144,9 +149,9 @@ class KmeanClass:
         self.linear_model = LinearSVC()
         self.linear_model.fit(trainData, trainLabels)
 
-        output_file = open(self.FILE_DIRECTORY+'data/linear_model.pkl', 'wb+')
-        pickle.dump(self.linear_model, output_file, -1)
-        output_file.close()
+#        output_file = open(self.FILE_DIRECTORY+'data/linear_model.pkl', 'wb+')
+#        pickle.dump(self.linear_model, output_file, -1)
+#        output_file.close()
 
         # evaluate the classifier
         print("[INFO] evaluating classifier...")
@@ -158,11 +163,11 @@ class KmeanClass:
         s = ''
         num_img = 0
         for filename in sorted(glob.glob(self.FILE_DIRECTORY+'testing/*.jpg')):
-            st_num = filename.index('\\')
-            st = filename[st_num+1:]
+            st_num = filename.index('testing\\')
+            st = filename[st_num+8:]
             img = np.array(cv2.imread(filename, 0).astype(float), dtype=np.float)
             # img = preprocessing.normalize(img)
-            img = preprocessing.scale(img)
+            # img = preprocessing.scale(img)
             histogram = self.histogram_plot(img)
             t = int(kmean_object.linear_model.predict([histogram[0]])[0])
             s += st + ' ' + self.names_dict[t] + '\n'
@@ -174,16 +179,17 @@ class KmeanClass:
 
     def histogram_plot(self, img):
         patch_for_image = extract_patches_2d(img, (self.SIZE_OF_PATCH, self.SIZE_OF_PATCH),
-                                             max_patches=self.NUMBER_OF_PATCHES, random_state=37)
+                                             max_patches=self.NUMBER_OF_PATCHES_BIG, random_state=37)
         sh = patch_for_image.shape
         patch_for_image = np.reshape(patch_for_image, (sh[0], sh[1] * sh[2]))
         patch_for_image = preprocessing.normalize(patch_for_image)
+        patch_for_image = preprocessing.scale(patch_for_image)
         labels = []
         for each_patch in patch_for_image:
             labels.append(kmean_object.kmeans.predict([each_patch]))
         histogram = np.histogram(labels, range(self.NUMBER_OF_CLUSTERS))
         return (histogram)
-
+# this function used when test
     def load_histograms(self):
         input_file = open(self.FILE_DIRECTORY+'data/x_histograms.pkl', 'rb+')
         self.x_histograms = pickle.load(input_file)
@@ -191,7 +197,7 @@ class KmeanClass:
         input_file = open(self.FILE_DIRECTORY+'data/y_histograms.pkl', 'rb+')
         self.y_histograms = pickle.load(input_file)
         input_file.close()
-
+# this function works when test
     def load_linear_classifier(self):
         input_file = open(self.FILE_DIRECTORY+'data/linear_model.pkl', 'rb+')
         self.linear_model = pickle.load(input_file)
@@ -199,7 +205,7 @@ class KmeanClass:
 
 kmean_object = KmeanClass()
 
-print('download pictures, make patches')
+print('download pictures, make patches 1')
 kmean_object.download_images()
 print('finish downloading')
 
