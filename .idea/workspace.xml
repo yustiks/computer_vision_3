@@ -2,7 +2,115 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aae0c29-2fcf-4aa5-8be4-42e7ad0ec15c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main1.py" afterPath="$PROJECT_DIR$/main1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training1/Insidecity/0.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training1/Insidecity/1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training1/Insidecity/2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training1/Insidecity/3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/training1/Insidecity/4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CV3_3_commit1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task3.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/10.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/11.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/12.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/13.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/14.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/15.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/16.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/17.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/18.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/19.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/20.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/21.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/22.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/23.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/24.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/25.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/26.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/27.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/28.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/29.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/30.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/31.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/33.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/34.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/37.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/38.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/39.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/40.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/41.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/42.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/43.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/44.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/45.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/46.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/47.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/48.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/49.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/50.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/51.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/52.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/53.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/54.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/55.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/56.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/57.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/58.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/59.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/60.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/61.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/62.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/63.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/64.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/65.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/66.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/67.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/68.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/69.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/70.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/71.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/72.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/73.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/74.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/75.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/76.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/77.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/78.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/79.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/8.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/80.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/81.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/82.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/83.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/84.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/85.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/86.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/87.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/88.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/89.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/9.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/90.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/91.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/92.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/93.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/94.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/95.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/96.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/97.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/98.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/bedroom/99.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/training1/kmean_big.pkl" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training1/bedroom/0.jpg" afterPath="$PROJECT_DIR$/training1/bedroom/0.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training1/bedroom/1.jpg" afterPath="$PROJECT_DIR$/training1/bedroom/1.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training1/bedroom/2.jpg" afterPath="$PROJECT_DIR$/training1/bedroom/2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training1/bedroom/3.jpg" afterPath="$PROJECT_DIR$/training1/bedroom/3.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/training1/bedroom/4.jpg" afterPath="$PROJECT_DIR$/training1/bedroom/4.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,14 +121,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4338">
-              <caret line="241" column="13" lean-forward="false" selection-start-line="241" selection-start-column="13" selection-end-line="241" selection-end-column="13" />
+            <state relative-caret-position="234">
+              <caret line="13" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="241" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task3.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/task3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="127" column="59" lean-forward="false" selection-start-line="127" selection-start-column="59" selection-end-line="127" selection-end-column="59" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CV3_3_commit1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CV3_3_commit1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,7 +192,10 @@
       <find>linear_classifier</find>
       <find>load_histograms</find>
       <find>y_hist</find>
+      <find>x_his</find>
+      <find>hist</find>
       <find>training</find>
+      <find>predict</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,6 +214,8 @@
         <option value="$PROJECT_DIR$/temp.py" />
         <option value="$PROJECT_DIR$/data/test.txt" />
         <option value="$PROJECT_DIR$/main1.py" />
+        <option value="$PROJECT_DIR$/CV3_3_commit1.py" />
+        <option value="$PROJECT_DIR$/task3.py" />
       </list>
     </option>
   </component>
@@ -111,7 +244,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -136,6 +271,11 @@
               <item name="comp_vision_3" type="b2602c69:ProjectViewProjectNode" />
               <item name="comp_vision_3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="comp_vision_3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="comp_vision_3" type="462c0819:PsiDirectoryNode" />
+              <item name="training1" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -147,14 +287,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/training1" />
       <recent name="$PROJECT_DIR$/training2/Coast" />
       <recent name="$PROJECT_DIR$/training2/Forest" />
       <recent name="$PROJECT_DIR$/training2/bedroom" />
       <recent name="$PROJECT_DIR$/data" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -169,7 +310,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main1">
+  <component name="RunManager" selected="Python.task3">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -183,23 +324,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="comp_vision_3" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="clusters" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.5" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="comp_vision_3" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/clusters.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -234,6 +358,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="comp_vision_3" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="task3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="comp_vision_3" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -275,17 +416,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
       <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.clusters" />
-      <item index="3" class="java.lang.String" itemvalue="Python.main1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="2" class="java.lang.String" itemvalue="Python.main1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.temp" />
+      <item index="4" class="java.lang.String" itemvalue="Python.task3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.main1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.temp" />
-        <item index="2" class="java.lang.String" itemvalue="Python.test" />
-        <item index="3" class="java.lang.String" itemvalue="Python.main" />
-        <item index="4" class="java.lang.String" itemvalue="Python.clusters" />
+        <item index="0" class="java.lang.String" itemvalue="Python.task3" />
+        <item index="1" class="java.lang.String" itemvalue="Python.main1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.temp" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -306,12 +447,13 @@
     <frame x="-70" y="131" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32205996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32205996" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6006006" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5165165" sideWeight="0.50269026" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5165165" sideWeight="0.49730977" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.49730977" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2927928" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -322,7 +464,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -365,35 +506,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="112" />
+      <option name="time" value="113" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/knn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18360">
@@ -716,10 +833,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CV3_3_commit1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CV3_3_commit1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="190" column="0" lean-forward="false" selection-start-line="190" selection-start-column="0" selection-end-line="190" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4338">
-          <caret line="241" column="13" lean-forward="false" selection-start-line="241" selection-start-column="13" selection-end-line="241" selection-end-column="13" />
+        <state relative-caret-position="234">
+          <caret line="13" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="241" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="127" column="59" lean-forward="false" selection-start-line="127" selection-start-column="59" selection-end-line="127" selection-end-column="59" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
